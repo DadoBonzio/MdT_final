@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/simulatore/simulatore.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script lang="text/javascript" src="../components/ui.js"></script>
+    <script lang="text/javascript" src="../components/turingmachine.js"></script>
+    <title>Simulatore MdT</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">SIMULATORE DELLA <a class="inheritdecorations" href="../index.html">MACCHINA DI TURING</a></h1>
+    </header>
+
+    <main>
+        <section>
+            <p class="fieldtext">Programma:</p>
+            <textarea id="program">
+            </textarea> <br>
+            <button onclick="FDE()" class="fieldtext" id="exebttn">EXECUTE</button>
+        </section>
+        <section>
+            <p class="fieldtext">Input:</p>
+            <input class="simulatorinput" id="input" size="80">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="fieldtext">Output:</p>
+            <input class="simulatorinput" id="output" size="80">
+        </section>
+    </main>
+</body>
+
+</html>

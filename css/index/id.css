@@ -1,0 +1,33 @@
+@media screen {
+    #hptitle {
+        color: white;
+        margin-left: 5vw;
+        width: 60vw;
+        line-height: 1em;
+        margin-top: 50vh;
+        translate: 0 -50%;
+        font-size: 7vw;
+    }
+
+    #glossarydisplayer {
+        position: absolute;
+        top: 25px;
+        right:25px;
+        width: 3vw;
+    }
+
+    #glossary {
+        position: absolute;
+        top: 25vh;
+        margin-left: 70vw;
+        height: 60vh;
+        width: 16vw;
+        background-color: #3f3f3f62;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 2vw;
+        transition: opacity .5s;
+    }
+}

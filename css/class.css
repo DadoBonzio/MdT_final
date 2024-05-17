@@ -1,0 +1,83 @@
+.hoverenlarge {
+    transition-property: transform;
+    transition-duration: .075s;
+    transition-timing-function: ease-in;
+}
+
+.hoverenlarge:hover {
+    transform: scale(1.25);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.nodecorations {
+    text-decoration: none;
+}
+
+.inheritdecorations {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.inheritcolor {
+    color: inherit;
+}
+
+.title {
+    text-align: center;
+    font-size: 4em;
+    border-bottom: 4px solid rgb(140,39,3);
+    color: rgb(140,39,3);
+}
+
+.maintext {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 2em;
+    color: rgb(64,38,23);
+}
+
+.subtitle {
+    margin-left: 3%;
+    font-size: 3em;
+    margin-top: 1.3em;
+    color: rgb(191,76,10);
+}
+
+.subsubtitle {
+    margin-left: 3%;
+    font-size: 2em;
+    margin-top: 1.3em;
+    color: rgb(242,167,102);
+}
+
+.floatright {
+    float: right;
+    margin-left: 1.5em;
+}
+
+.framedimg {
+    margin-left: 1.5em;
+}
+
+.floatleft {
+    float: left;
+    margin-right: 1.5em;
+}
+
+.homebutton {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 4em;
+}
+
+.fieldtext {
+    font-size: 2.7em;
+}
+
+.simulatorinput {
+    font-size: 2em;
+}

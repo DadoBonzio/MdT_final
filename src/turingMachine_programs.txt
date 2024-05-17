@@ -1,0 +1,199 @@
+f(x) = 1;
+
+s>q>1
+q1w11
+q0w11
+w1w*1
+w0w*1
+w*h*0
+
+f(x) = x % 2
+
+s>q>1
+q0q01
+q1q11
+q*c*2
+c1o*2
+c0e*2
+o1o*2
+o0o*2
+o>p>1
+e1e*2
+e0e*2
+e>r>1
+p*h10
+r*h00
+
+f(x, y) = x + y
+
+legenda:
+b/j - 0
+n/k - 1
+z/a - somma 0
+x/d - somma 1
+c/f - somma 1 con resto
+
+o - somma finale 0
+p - somma finale 1
+
+s>_>1
+
+//qualunque cosa leggi nella prima cella, avanza. Se leggi ' ', inizia a leggere ultima cifra primo numero
+_0_01
+_1_11
+_ r 1
+
+//stato r - lettura primo numero: avanza finché non leggi '+' o ' ', poi torna indietro di uno per leggere ultima cifra
+r0r01
+r1r11
+r+q+2
+r q 2
+
+//stato q - lettura ultima cifra primo numero: 
+q0b 1
+q1n 1
+q h 0
+
+//stati b e n: letta ultima cifra primo numero, avanza fino a ultima cifra secondo numero
+b+b+1
+b b 1
+b0b01
+b1b11
+b*j*2
+
+n+n+1
+n n 1
+n0n01
+n1n11
+n*k*2
+
+//stati j e k, leggi ultima cifra secondo numero e passa agli stati z,x,c,v
+j0z*2
+j1x*2
+
+k0x*2
+k1c*2
+
+//stati zxc - torna indietro e controlla il resto
+z z 2
+z+z+2
+z1z12
+z0z02
+z>a>1
+
+a0o01
+a1p01
+
+x x 2
+x+x+2
+x1x12
+x0x02
+x>d>1
+
+d0p01
+d1o11
+
+c c 2
+c+c+2
+c1c12
+c0c02
+c>f>1
+
+f0o11
+f1p11
+
+//stati o e p: scrivi prima del trattino
+o+o+1
+o o 1
+o0o01
+o1o11
+o*o*1
+o-w02
+
+p+p+1
+p p 1
+p0p01
+p1p11
+p*p*1
+p-w12
+
+
+w i-2
+
+stato i- torna indietro e ricomincia
+i i 2
+i+i+2
+i1i12
+i0i02
+i*i*2
+i>_>1
+
+s>_>1
+_0_01
+_1_11
+_ r 1
+r0r01
+r1r11
+r+q+2
+r q 2
+q0b 1
+q1n 1
+q h 0
+b+b+1
+b b 1
+b0b01
+b1b11
+b*j*2
+n+n+1
+n n 1
+n0n01
+n1n11
+n*k*2
+j0z*2
+j1x*2
+k0x*2
+k1c*2
+z z 2
+z+z+2
+z1z12
+z0z02
+z>a>1
+a0o01
+a1p01
+x x 2
+x+x+2
+x1x12
+x0x02
+x>d>1
+d0p01
+d1o11
+c c 2
+c+c+2
+c1c12
+c0c02
+c>f>1
+f0o11
+f1p11
+o+o+1
+o o 1
+o0o01
+o1o11
+o*o*1
+o-w02
+p+p+1
+p p 1
+p0p01
+p1p11
+p*p*1
+p-w12
+w i-2
+i i 2
+i+i+2
+i1i12
+i0i02
+i*i*2
+i>_>1
+
+
+
+
